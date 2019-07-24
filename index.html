@@ -5,14 +5,31 @@
     <title>Document</title>
 </head>
 <body>
-    <p>
-        WT2
-    </p>
+    
     <h1>Learn JSON</h1>
   <script>
-      var person={firstName:"John"};
-      var person2={firstName:"John"}
-      console.log(person);
+     var myFriends={
+    "friends":[
+        {
+            "firstName":"Jones","lastName":"Smith"
+        },
+        {
+            "firstName":"Rose","lastName":"Lovepreet"
+        },
+        {
+            "firstName":"Mandeep","lastName":"Singh"
+        },
+        {
+            "firstName":"Harmeet","lastName":"Kaur"
+        }
+    ]
+}
+var users=myFiends.friends;
+
+  for (i=0;i<myFriends.friends.length;i++){
+      console.log(myFiends.friends[i]);
+  }   
+      
   </script>  
 </body>
 </html>
